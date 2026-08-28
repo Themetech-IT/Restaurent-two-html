@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!-- swiper css -->
+		<link
+			rel="stylesheet"
+			href="./assets/plugin/swiperjs/swiper-bundle.min.css"
+		/>
+
+		<!-- icon  -->
+		<script src="./assets/plugin/iconify/iconify-icon.min.js"></script>
+
+		<!-- bootstrap -->
+		<link
+			rel="stylesheet"
+			href="./assets/plugin/bootstrap/css/bootstrap.min.css"
+		/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+
+	<body class="bg-black">
+		<!-- header  -->
+		<header id="ru-header" class="ru-header">
+			<div class="ru-header-container">
+				<div class="ru-header_inner">
+					<div class="ru-header_logo">
+						<a href="index.html">
+							<img id="logo" src="./assets/img/logo/logo.png" alt="logo" />
+						</a>
+					</div>
+					<div class="ru-header_menus">
+						<ul class="ru-nav">
+							<li>
+								<div class="dropdown ru-nav-link">
+									<button
+										class="sub_drop"
+										type="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<span>Home</span>
+										<span class="ru_ic"
+											><iconify-icon
+												icon="akar-icons:triangle-up-fill"
+											></iconify-icon
+										></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="./index.html">Home 1</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./index-2.html">Home 2</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="ru-nav-link" href="./about-us.html">About Us</a>
+							</li>
+							<li>
+								<a class="ru-nav-link" href="./service.html">Service</a>
+							</li>
+
+							<li>
+								<div class="dropdown ru-nav-link active">
+									<button
+										class="sub_drop"
+										type="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<span>Pages</span>
+										<span class="ru_ic"
+											><iconify-icon
+												icon="akar-icons:triangle-up-fill"
+											></iconify-icon
+										></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="./dishes-menu.html"
+												>Dish Menu</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./bar-menu.html"
+												>Bar Menu</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./wine-menu.html"
+												>Wine Menu</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item active" href="./blog-detail.html"
+												>Blog Details</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./service-details.html"
+												>Service Details</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./coupon.html">Coupon</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./voucher.html">Voucher</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./voucher-details.html"
+												>Voucher Details</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./reservation.html"
+												>Reservation-1</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="./service-reservation.html"
+												>Service Reservation</a
+											>
+										</li>
+										<li>
+											<a
+												class="dropdown-item"
+												href="./service-reservation-2.html"
+												>Service Reservation 2</a
+											>
+										</li>
+
+										<li>
+											<a class="dropdown-item" href="./modal.html"
+												>Modal Pop-Up</a
+											>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="ru-nav-link" href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+					<div class="ru-header_actions">
+						<ul class="ru-header_actions_list language-dp">
+							<li>
+								<a class="btn-rud-primary" href="#">
+									<span class="icon"
+										><iconify-icon icon="heroicons:calendar"></iconify-icon
+									></span>
+									<span class="ru-tx-book">BOOK A TABLE</span>
+								</a>
+							</li>
+						</ul>
+						<div class="ru-header_mobile">
+							<button
+								type="button"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasRight"
+								aria-controls="offcanvasRight"
+								class="ru-header_mobile_btn"
+							>
+								<iconify-icon
+									icon="heroicons:adjustments-horizontal-16-solid"
+								></iconify-icon>
+							</button>
+						</div>
+						<div
+							class="offcanvas offcanvas-end mobile-sidebar-menus"
+							tabindex="-1"
+							id="offcanvasRight"
+							aria-labelledby="offcanvasRightLabel"
+						>
+							<div class="offcanvas-header">
+								<div class="ru-header_logo">
+									<img id="logo" src="./assets/img/logo/logo.png" alt="logo" />
+								</div>
+								<button
+									type="button"
+									class="btn-close btn-close-white"
+									data-bs-dismiss="offcanvas"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul id="mobile-menus">
+									<li>
+										<a class="item" href="#"
+											><span>Home</span>
+											<span class="ru-ic">
+												<iconify-icon
+													icon="akar-icons:triangle-down-fill"
+												></iconify-icon> </span
+										></a>
+										<ul class="sub-menu">
+											<li>
+												<a class="sub-item" href="./index.html">Home 1</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./index-2.html">Home 2</a>
+											</li>
+										</ul>
+									</li>
+									<li><a class="item" href="./about-us.html">About Us</a></li>
+									<li><a class="item" href="./service.html">Service</a></li>
+									<li><a class="item" href="./blog.html">Blog</a></li>
+
+									<li>
+										<a class="item active" href="#"
+											><span>Pages</span>
+											<span class="ru-ic">
+												<iconify-icon
+													icon="akar-icons:triangle-down-fill"
+												></iconify-icon> </span
+										></a>
+										<ul class="sub-menu">
+											<li>
+												<a class="sub-item" href="./dishes-menu.html"
+													>Dish Menu</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./bar-menu.html">Bar Menu</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./wine-menu.html"
+													>Wine Menu</a
+												>
+											</li>
+											<li>
+												<a class="sub-item active" href="./blog-detail.html"
+													>Blog Details</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./service-details.html"
+													>Service Details</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./coupon.html">Coupon</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./voucher.html">Voucher</a>
+											</li>
+											<li>
+												<a class="sub-item" href="./voucher-details.html"
+													>Voucher Details</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./reservation.html"
+													>Reservation-1</a
+												>
+											</li>
+
+											<li>
+												<a class="sub-item" href="./service-reservation.html"
+													>Service Reservation</a
+												>
+											</li>
+											<li>
+												<a class="sub-item" href="./service-reservation-2.html"
+													>Service Reservation 2</a
+												>
+											</li>
+
+											<li>
+												<a class="sub-item" href="./modal.html">Modal Pop-Up</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- main  -->
+		<main>
+			<section class="rud-blog-details py-72">
+				<div class="ru-container">
+					<div class="rud-bl-content">
+						<div class="mx-auto mb-52" style="max-width: 1196px">
+							<h3 class="bl-hilight-title">
+								By <span class="marked">Jackson </span> in
+								<span class="marked"> Cooking </span> on 26 November 2023
+							</h3>
+							<h4 class="bl-title">
+								A recipe has no soul. You, as the cook, must bring soul to the
+								recipe
+							</h4>
+						</div>
+						<div class="bl-banner mb-52">
+							<img src="./assets/img/blogs/d-1.jpg" alt="banner" />
+						</div>
+						<div class="bl-desc-box">
+							<div class="left">
+								<ul class="bl-social-list">
+									<li>
+										<a href="#" class="item"
+											><iconify-icon icon="jam:facebook"></iconify-icon
+										></a>
+									</li>
+									<li>
+										<a href="#" class="item"
+											><iconify-icon icon="ri:linkedin-fill"></iconify-icon
+										></a>
+									</li>
+									<li>
+										<a href="#" class="item"
+											><iconify-icon icon="mdi:twitter"></iconify-icon
+										></a>
+									</li>
+								</ul>
+							</div>
+							<div class="right">
+								<h4 class="bl-ct-title mb-22">
+									My weaknesses have always been food and men in that order.
+								</h4>
+								<p class="bl-ct-text">
+									Vivamus interdum suscipit lacus. Nunc ultrices accumsan
+									mattis. Aliquam vel sem vel velit efficitur malesuada. Donec
+									arcu lacus, ornare eget ligula vel, commodo luctus felis. Ut
+									dignissim sapien sit amet molestie rutrum. Orci varius natoque
+									penatibus et magnis dis parturient montes, nascetur ridiculus
+									mus. Pellentesque in porta dolor, a suscipit risus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Cras ac
+									arcu in lorem rhoncus ullamcorper. Ut at nulla ut libero
+									mollis viverra sed vitae purus.
+								</p>
+								<div class="bl-ct-img">
+									<img src="./assets/img/blogs/d-1.jpg" alt="" />
+								</div>
+								<p class="bl-ct-text">
+									Vivamus interdum suscipit lacus. Nunc ultrices accumsan
+									mattis. Aliquam vel sem vel velit efficitur malesuada. Donec
+									arcu lacus, ornare eget ligula vel, commodo luctus felis. Ut
+									dignissim sapien sit amet molestie rutrum. Orci varius natoque
+									penatibus et magnis dis parturient montes, nascetur ridiculus
+									mus. Pellentesque in porta dolor, a suscipit risus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Cras ac
+									arcu in lorem rhoncus ullamcorper. Ut at nulla ut libero
+									mollis viverra sed vitae purus.
+								</p>
+								<ul class="bl-ct-lists py-52">
+									<li>
+										<p class="item bl-ct-text">
+											Donec arcu lacus, ornare eget ligula vel, commodo luctus
+											felis.
+										</p>
+									</li>
+									<li>
+										<p class="item bl-ct-text">
+											Donec arcu lacus, ornare eget ligula vel, commodo luctus
+											felis.
+										</p>
+									</li>
+									<li>
+										<p class="item bl-ct-text">
+											Donec arcu lacus, ornare eget ligula vel, commodo luctus
+											felis.
+										</p>
+									</li>
+									<li>
+										<p class="item bl-ct-text">
+											Donec arcu lacus, ornare eget ligula vel, commodo luctus
+											felis.
+										</p>
+									</li>
+								</ul>
+
+								<p class="bl-ct-text mb-22">
+									Vivamus interdum suscipit lacus. Nunc ultrices accumsan
+									mattis. Aliquam vel sem vel velit efficitur malesuada. Donec
+									arcu lacus, ornare eget ligula vel, commodo luctus felis. Ut
+									dignissim sapien sit amet molestie rutrum. Orci varius natoque
+									penatibus et magnis dis parturient montes, nascetur ridiculus
+									mus. Pellentesque in porta dolor, a suscipit risus. Lorem
+									ipsum dolor sit amet, consectetur adipiscing elit. Cras ac
+									arcu in lorem rhoncus ullamcorper. Ut at nulla ut libero
+									mollis viverra sed vitae purus.
+								</p>
+
+								<div class="bl-br"></div>
+
+								<div class="bl-tags mt-22">
+									<p class="tag-ttl">Tag :</p>
+									<ul class="tag-list">
+										<li><a href="#" class="tag-item">Dished</a></li>
+										<li><a href="#" class="tag-item">Food</a></li>
+										<li><a href="#" class="tag-item">Healy</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- comment  -->
+			<section class="rud-comment-box py-72">
+				<div class="ru-container">
+					<h4 class="comment-box-count">2 Comments</h4>
+					<ul class="ru-comment-lists mt-52">
+						<li>
+							<div class="item">
+								<div class="left">
+									<img src="./assets/img/user/1.jpg" alt="user" />
+								</div>
+								<div class="right">
+									<h5 class="u-name">Herman Miller</h5>
+									<p class="u-date">17 July 2020, 6:05 PM</p>
+									<p class="u-text">
+										Lorem ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem ipsum has been the industry's
+										standard dummy text ever since the make book.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="left">
+									<img src="./assets/img/user/1.jpg" alt="user" />
+								</div>
+								<div class="right">
+									<h5 class="u-name">Herman Miller</h5>
+									<p class="u-date">17 July 2020, 6:05 PM</p>
+									<p class="u-text">
+										Lorem ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem ipsum has been the industry's
+										standard dummy text ever since the make book.
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- comment form  -->
+			<section class="ru-comment-form py-52">
+				<div class="ru-container">
+					<h1 class="title">Read Some Latest Blog & News</h1>
+					<p class="desc">
+						Your email address will not be published. Required fields are marked
+						*
+					</p>
+
+					<div class="mt-52">
+						<form action="">
+							<div class="rud-booking-from">
+								<div class="ru-form_item">
+									<div class="ru-form_item-input">
+										<input
+											placeholder="Your Name"
+											type="text"
+											id="date"
+											class="ru-input"
+											style="background: #0e1316"
+										/>
+									</div>
+								</div>
+								<div class="ru-form_item">
+									<div class="ru-form_item-input">
+										<input
+											placeholder="Email Address"
+											type="email"
+											style="background: #0e1316"
+											id="date"
+											class="ru-input"
+										/>
+									</div>
+								</div>
+
+								<div class="ru-form_item span-2">
+									<div class="ru-form_item-input">
+										<textarea
+											rows="4"
+											cols="50"
+											placeholder="Comment"
+											style="background: #0e1316"
+											id="description"
+											class="ru-input h-auto"
+										></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="submit mt-52 text-end">
+								<button type="submit" class="btn-rud-primary d-inline-flex">
+									<span>Submit</span>
+									<span class="icon">
+										<iconify-icon icon="heroicons:arrow-right"></iconify-icon>
+									</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- footer  -->
+		<footer class="ru-footer">
+			<div class="ru-container">
+				<div class="ru-footer-top">
+					<div class="ru-footer-top_left">
+						<div class="ru-footer-top_left-logo">
+							<img src="./assets/img/logo/logo.png" alt="logo" />
+						</div>
+						<p class="ru-footer-top_left-text">
+							"RESTURENT" is a culinary oasis dedicated to crafting delectable
+							experiences for food enthusiasts worldwide. From savory delights
+							to sweet indulgences, our company specializes in creating gourmet
+							treats that tantalize taste buds and ignite culinary passions.
+						</p>
+					</div>
+					<div class="ru-footer-top_right">
+						<div class="ru-footer-links">
+							<h3 class="ru-footer-title">Quick Links</h3>
+							<ul class="ru-footer-list">
+								<li><a class="list" href="#">About</a></li>
+								<li><a class="list" href="#">Blog</a></li>
+								<li><a class="list" href="#">Our Service</a></li>
+								<li><a class="list" href="#">Dishes service</a></li>
+								<li><a class="list" href="#">Wishes service</a></li>
+							</ul>
+						</div>
+						<div class="ru-footer-links opening-hours">
+							<h3 class="ru-footer-title">Opening Hours</h3>
+							<ul class="ru-footer-hours">
+								<li>
+									<div class="list">
+										<p class="day">
+											<span class="icon"
+												><iconify-icon
+													icon="radix-icons:dot-filled"
+												></iconify-icon
+											></span>
+											<span>Sunday - Thursday</span>
+										</p>
+										<p class="time">08:00 am - 09:00pm</p>
+									</div>
+								</li>
+								<li>
+									<div class="list">
+										<p class="day">
+											<span class="icon"
+												><iconify-icon
+													icon="radix-icons:dot-filled"
+												></iconify-icon
+											></span>
+											<span>Sunday - Thursday</span>
+										</p>
+										<p class="time">08:00 am - 09:00pm</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="ru-footer-links contact">
+							<h3 class="ru-footer-title">Contact</h3>
+							<ul class="ru-footer-contact">
+								<li>
+									<a href="#">
+										<div class="lists">
+											<p class="icon">
+												<iconify-icon icon="heroicons:envelope"></iconify-icon>
+											</p>
+											<div class="content">
+												<p class="title">Email:</p>
+												<p class="value">flashmessage@gmail.com</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="lists">
+											<p class="icon">
+												<iconify-icon icon="heroicons:map-pin"></iconify-icon>
+											</p>
+											<div class="content">
+												<p class="title">Location:</p>
+												<p class="value">Dhaka, Bangladesh</p>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<!-- news letter  -->
+							<div class="fu-news-sub">
+								<form action="">
+									<h3 class="fu-news-sub-title">news letter</h3>
+
+									<div class="fu-news-sub-wrap">
+										<input
+											class="fu-news-sub-input"
+											type="email"
+											placeholder="Enter your email"
+										/>
+										<button type="submit" class="fu-news-sub-btn">
+											<iconify-icon icon="carbon:send-filled"></iconify-icon>
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ru-footer-bottom">
+					<p class="ru-footer-bottom_copy">© Copyright 2024 RESTAURANT</p>
+					<ul class="ru-footer-bottom_social">
+						<li>
+							<a href="#">
+								<iconify-icon icon="ri:facebook-fill"></iconify-icon>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<iconify-icon icon="ri:linkedin-fill"></iconify-icon>
+							</a>
+						</li>
+						<li>
+							<a href="#"> <iconify-icon icon="mdi:twitter"></iconify-icon> </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!-- jquery  -->
+		<script src="./assets/plugin/jquery/jquery-3.7.1.min.js"></script>
+
+		<!-- bootstrap -->
+		<script src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- swiperjs -->
+		<script src="./assets/plugin/swiperjs/swiper-bundle.min.js"></script>
+
+		<!-- js  -->
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,233 @@
+.ru-input {
+	padding: 0px 40px 0px 20px;
+	border-radius: 15px;
+	width: 100%;
+	color: #fff;
+	height: 56px;
+	border: 0;
+	outline: 0;
+	transition: 0.3s ease;
+	border-radius: 5px;
+	border: 1px solid #4a4a4a;
+	background: #0c0e0e;
+
+	&::placeholder {
+		color: #fff;
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 14px; /* 87.5% */
+	}
+	&:focus {
+		background: #0c0e0e;
+	}
+	@include responsive('xmd') {
+		font-size: 15px;
+		height: 50px;
+	}
+
+	@include responsive('sm') {
+		font-size: 14px;
+		padding: 10px;
+		height: 40px;
+	}
+}
+textarea {
+	padding-top: 20px !important;
+}
+.ru-form_item label {
+	color: #000;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 36px; /* 200% */
+	margin-bottom: 15px;
+	@include responsive('xmd') {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+}
+
+.ru-form_item-input {
+	position: relative;
+	font-size: 21px;
+	.icon {
+		position: absolute;
+		top: 50%;
+		right: 18px;
+		transform: translateY(-50%);
+		pointer-events: none;
+	}
+}
+
+.ru-search-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+	font-family: Cabin;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal; /* 133.333% */
+	height: 73px;
+	border-radius: 98px;
+	background: #0e1316;
+	padding-left: 23px;
+	padding-right: 23px;
+	max-width: 905px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 52px;
+
+	@include responsive('xmd') {
+		font-size: 15px;
+		height: 56px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@include responsive('sm') {
+		margin-top: 30px;
+	}
+	.search {
+		flex: 1;
+		padding-left: 22px;
+		display: inline-block;
+		border: 0;
+		outline: 0;
+		color: #fff;
+		background: transparent;
+		&::placeholder {
+			color: #cecece;
+			font-family: Cabin;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 24px; /* 133.333% */
+		}
+
+		&[type='search']::-webkit-search-cancel-button {
+			-webkit-appearance: none; /* Remove default styling */
+			height: 27px; /* Adjust height */
+			width: 27px; /* Adjust width */
+			background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"%3E%3Cpath fill="none" d="M0 0h24v24H0z"/%3E%3Cpath fill="%23ffffff" d="M18.3 5.71L16.59 4 12 8.59 7.41 4 5.7 5.71 10.29 10.3 5.7 14.89l1.71 1.71L12 12.41l4.59 4.59 1.71-1.71-4.59-4.59z"/%3E%3C/svg%3E')
+				no-repeat center center;
+
+			background-size: contain; /* Ensure icon scales properly */
+			opacity: 0.8;
+
+			@include responsive('xmd') {
+				height: 20px;
+				width: 20px;
+			}
+		}
+	}
+	.icon {
+		font-size: 24px;
+		@include responsive('xmd') {
+			font-size: 20px;
+		}
+	}
+	.close {
+		font-size: 27px;
+		@include responsive('xmd') {
+			font-size: 20px;
+		}
+	}
+}
+
+.rud-service-res-from {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 50px;
+	column-gap: 30px;
+
+	@include responsive('2xl') {
+		column-gap: 20px;
+		row-gap: 30px;
+	}
+
+	@include responsive('xl') {
+		column-gap: 15px;
+		row-gap: 20px;
+	}
+
+	@include responsive('lg') {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include responsive('md') {
+		grid-template-columns: 1fr;
+	}
+
+	.span-3 {
+		grid-column: span 3;
+
+		@include responsive('lg') {
+			grid-column: span 2;
+		}
+
+		@include responsive('md') {
+			grid-column: span 1;
+		}
+	}
+}
+
+.ru-form_pack {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	padding: 11px 7px;
+	border-radius: 16.542px;
+	border: 0.689px solid #4a4a4a;
+	// background: var(--Neutral-100, #fff);
+	box-shadow: 0px 1.378px 8.271px 0px rgba(20, 20, 43, 0.08);
+	.icon {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+
+		.p-title {
+			color: #cacaca;
+			font-feature-settings: 'clig' off, 'liga' off;
+			font-family: 'Inter';
+			font-size: 12.406px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 13.785px; /* 111.111% */
+		}
+		.p-desc {
+			color: #fff;
+			font-family: Inter;
+			font-size: 15.163px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 16.542px; /* 109.091% */
+		}
+	}
+}
+.ru-package-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	input[type='radio']:checked ~ label {
+		border-radius: 16.542px;
+		background: #b9927253 !important;
+		// border-color: #b99272;
+	}
+}

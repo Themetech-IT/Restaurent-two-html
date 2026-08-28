@@ -1,0 +1,84 @@
+.btn-rud-primary {
+	color: #fff;
+	text-align: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 36px; /* 225% */
+	border-radius: 5px;
+	background: #b99272;
+	display: flex;
+	padding: 5px 14px;
+	width: max-content;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	height: 46px;
+	transition: 0.3s ease;
+	&:hover {
+		background: #fff;
+		color: #b99272;
+	}
+	.icon {
+		font-size: 24px;
+	}
+	&.lg {
+		height: 56px;
+		padding: 0 32px;
+
+		@include responsive('lg') {
+			height: 45px;
+			padding: 0 20px;
+		}
+
+		@include responsive('md') {
+			height: 40px;
+		}
+	}
+
+	&.normal {
+		transition: 0.3s ease;
+		background: transparent;
+		&:hover {
+			background: #fff;
+			color: #b99272;
+		}
+	}
+
+	@include responsive('lg') {
+		font-size: 14px;
+		line-height: 26px;
+		height: 36px;
+		padding: 0 14px;
+	}
+	@include responsive('md') {
+		font-size: 12px;
+		line-height: 24px;
+		height: 40px;
+	}
+}
+
+.slider-arrow-2 {
+	border: 1px solid #b99272;
+	border-radius: 50%;
+	color: #b99272;
+	width: 67px;
+	height: 67px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	cursor: pointer;
+	transition: 0.3s;
+	&:hover {
+		background: #b99272;
+		color: #fff;
+	}
+
+	@include responsive('lg') {
+		width: 50px;
+		height: 50px;
+		font-size: 18px;
+	}
+}

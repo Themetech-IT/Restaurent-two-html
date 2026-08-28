@@ -1,0 +1,209 @@
+.rud-about-list-desc {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+
+	@include responsive('2xl') {
+		gap: 18px;
+	}
+
+	@include responsive('md') {
+		gap: 16px;
+	}
+
+	@include responsive('sm') {
+		gap: 12px;
+	}
+	.item {
+		.icon-box {
+			margin-bottom: 12px;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+
+			@include responsive('2xl') {
+				gap: 8px;
+			}
+			.icon {
+				font-size: 38px;
+
+				@include responsive('2xl') {
+					font-size: 32px;
+				}
+
+				@include responsive('md') {
+					font-size: 28px;
+				}
+			}
+		}
+		.ab-title {
+			color: var(--Schemes-On-Primary, #fff);
+			font-family: 'Bebas Neue';
+			font-size: 28px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 44px; /* 157.143% */
+
+			@include responsive('2xl') {
+				font-size: 24px;
+				line-height: 36px;
+			}
+
+			@include responsive('md') {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}
+		.ab-desc {
+			color: #d9d9d9;
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 36px; /* 200% */
+
+			@include responsive('2xl') {
+				font-size: 16px;
+				line-height: 30px;
+			}
+
+			@include responsive('md') {
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+
+// ru-flex-actions button
+.ru-flex-actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+// increment counter
+.ru-inc-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	@include responsive('lg') {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		row-gap: 30px;
+	}
+	@include responsive('sm') {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 10px;
+		row-gap: 20px;
+	}
+
+	.ru-counter_text-dt {
+		max-width: 340px;
+		@include responsive('lg') {
+			grid-column: span 4;
+		}
+		@include responsive('sm') {
+			grid-column: span 2;
+		}
+	}
+	.icons_texts-dt {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		img {
+			max-width: 50px;
+		}
+		.icons_texts-dt_text {
+			font-family: Cabin;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 29px; /* 161.111% */
+			@include responsive('2xl') {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.ru-list-counter {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 5px;
+		@include responsive('2xl') {
+			gap: 0;
+		}
+		.ru-list-counter_inc {
+			font-family: Cabin;
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 38px; /* 118.75% */
+			@include responsive('2xl') {
+				font-size: 28px;
+			}
+			@include responsive('md') {
+				font-size: 24px;
+			}
+		}
+		.ru-list-counter_text {
+			font-family: Cabin;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 38px; /* 237.5% */
+			@include responsive('2xl') {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+// facilities card
+.ru-facilities-card {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+
+	@include responsive('lg') {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include responsive('sm') {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.item {
+		border-radius: 20px;
+		background: #0e1317;
+		padding: 20px;
+		.img-box {
+			text-align: center;
+			img {
+				width: 67.569px;
+				height: 67.569px;
+			}
+			margin-bottom: 46px;
+		}
+
+		.c-title {
+			color: var(--Schemes-On-Primary, #fff);
+			text-align: center;
+			font-family: Inter;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 34.75px; /* 144.792% */
+			margin-bottom: 21px;
+		}
+		.c-desc {
+			color: #d9d9d9;
+			text-align: center;
+			font-family: Inter;
+			font-size: 17.375px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 28.958px; /* 166.667% */
+		}
+	}
+}
